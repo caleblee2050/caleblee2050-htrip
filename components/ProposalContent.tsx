@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CoffeeIcon, HomeIcon, ShovelIcon, SpinnerIcon, MuseumIcon, MountainIcon, RollerCoasterIcon, AnimalIcon, BeerIcon } from './icons';
+import { CoffeeIcon, HomeIcon, ShovelIcon, SpinnerIcon, MuseumIcon, MountainIcon, RollerCoasterIcon, AnimalIcon, BeerIcon, TractorIcon, SkiIcon } from './icons';
 import { generateItinerary } from '../services/geminiService';
 
 const ProposalContent: React.FC = () => {
@@ -32,7 +32,7 @@ const ProposalContent: React.FC = () => {
             </div>
 
             <h3 className="text-xl font-semibold text-gray-800 mb-4">핵심 프로그램 하이라이트</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
                 <div className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                     <CoffeeIcon className="text-yellow-700 mb-2 h-8 w-8" />
                     <h4 className="font-bold text-lg">커피 로스팅 & 드립백 만들기</h4>
@@ -47,6 +47,11 @@ const ProposalContent: React.FC = () => {
                     <HomeIcon className="text-blue-700 mb-2 h-8 w-8" />
                     <h4 className="font-bold text-lg">한옥 스테이 & 전통 교육</h4>
                     <p className="text-sm text-gray-600">고즈넉한 한옥에서의 하룻밤. 다문화 교육, 전통 예절 교육 등 맞춤형 교육 진행이 가능합니다.</p>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <TractorIcon className="text-green-600 mb-2 h-8 w-8" />
+                    <h4 className="font-bold text-lg">로컬체험 프로그램</h4>
+                    <p className="text-sm text-gray-600">생산자 만나기, 농업기술센터 견학, 1~6차 산업 간접 체험하기를 통한 지역 농업의 이해.</p>
                 </div>
             </div>
 
@@ -76,6 +81,11 @@ const ProposalContent: React.FC = () => {
                     <BeerIcon className="text-amber-700 mb-2 h-8 w-8" />
                     <h4 className="font-bold text-lg">전통 식혜/맥주 만들기</h4>
                     <p className="text-sm text-gray-600">서면 '농담'에서 발효의 원리를 배우고, 직접 만든 식혜와 응용 샴푸는 가져가고, 맥주는 학교로 배송됩니다.</p>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <SkiIcon className="text-blue-600 mb-2 h-8 w-8" />
+                    <h4 className="font-bold text-lg">대명 비발디 리조트</h4>
+                    <p className="text-sm text-gray-600">사계절 즐길 수 있는 스키, 오션월드, 루지 체험. 동적인 레포츠 활동으로 에너지를 발산하는 시간입니다.</p>
                 </div>
             </div>
             

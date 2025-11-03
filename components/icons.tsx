@@ -135,3 +135,27 @@ export const BeerIcon: React.FC<IconProps> = (props) => (
         <path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8" />
     </svg>
 );
+
+export const TractorIcon: React.FC<IconProps> = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M3 4h9l1 7" />
+        <path d="M4 11V4" />
+        <path d="M8 10V4" />
+        <path d="M18 5c-.6 0-1 .4-1 1v5.6" />
+        <path d="M9 18h8" />
+        <circle cx="7" cy="18" r="3" />
+        <path d="M7 18h4" />
+        <circle cx="17" cy="18" r="1" />
+    </svg>
+);
+
+export const SkiIcon: React.FC<IconProps> = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <circle cx="7" cy="5" r="2" />
+        <path d="M3 19l5-6 3 3" />
+        <path d="M11 16l3-6" />
+        <path d="M2 22 l8-4" />
+        <path d="M14 12l8-4" />
+        <path d="M10 18l12-6" />
+    </svg>
+);
