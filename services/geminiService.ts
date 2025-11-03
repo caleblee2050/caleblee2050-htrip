@@ -1,8 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 
 // API key is handled by the environment as per instructions.
-// Ensure process.env.API_KEY is available in your environment.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY! });
+// Ensure VITE_GEMINI_API_KEY is available in your environment.
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+const ai = new GoogleGenAI({ apiKey });
 
 export const generateItinerary = async (people: string, duration: string, theme: string): Promise<string> => {
     const systemPrompt = `당신은 대한민국 강원도 홍천군의 체험학습 전문 기획자입니다. 당신이 활용할 수 있는 자원은 다음과 같습니다: 
