@@ -196,11 +196,10 @@ const ProposalContent: React.FC = () => {
             <p className="text-sm text-gray-500 mt-2">* 위 일정은 예시이며, 학교의 목적(힐링, 교육, 팀빌딩 등)과 예산에 따라 자유롭게 변경 가능합니다.</p>
             
             <div className="mt-10 text-center bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">11월 6일, 서대협 정기 모임에서 뵙겠습니다.</h3>
-                <p className="text-gray-600 mb-4">귀교의 다음 체험학습을 가장 의미 있는 시간으로 만들어 드리겠습니다.<br />자세한 내용은 현장에서 문의해 주세요.</p>
-                <button className="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
-                    지금 바로 문의하기
-                </button>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">귀교의 다음 체험학습을 가장 의미 있는 시간으로 만들어 드리겠습니다.<br />자세한 내용은 현장에서 문의해 주세요.</h3>
+                <a href="https://www.notion.so/2a022558a74f8067b7f4fafc67535396?pvs=106" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                    지금 바로 신청하기
+                </a>
             </div>
         </div>
     );
