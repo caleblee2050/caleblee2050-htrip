@@ -23,9 +23,14 @@ View your app in AI Studio: https://ai.studio/apps/drive/1Tj_x99LiwvDdQtllpFvnGI
 
 1. Push your code to GitHub repository
 2. Import the project in Vercel dashboard
-3. Add environment variable in Vercel project settings:
-   - Name: `VITE_GEMINI_API_KEY`
-   - Value: Your Gemini API key
-4. Deploy
+3. **IMPORTANT:** Add environment variable in Vercel project settings:
+   - Go to: Project Settings → Environment Variables
+   - Add new variable:
+     - Name: `VITE_GEMINI_API_KEY`
+     - Value: Your Gemini API key (get it from https://aistudio.google.com/apikey)
+     - Environment: Production, Preview, Development (select all)
+4. Redeploy the project after adding the environment variable
 
 The project is configured with `vercel.json` for automatic deployment.
+
+**Note:** The `VITE_` prefix is required for environment variables to be accessible in the browser.

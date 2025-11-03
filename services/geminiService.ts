@@ -3,10 +3,19 @@ import { GoogleGenAI } from "@google/genai";
 // API key is handled by the environment as per instructions.
 // Ensure VITE_GEMINI_API_KEY is available in your environment.
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-const ai = new GoogleGenAI({ apiKey });
+
+if (!apiKey) {
+    console.error('VITE_GEMINI_API_KEY is not set. Please configure it in your environment variables.');
+}
+
+const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 export const generateItinerary = async (people: string, duration: string, theme: string): Promise<string> => {
-    const systemPrompt = `당신은 대한민국 강원도 홍천군의 체험학습 전문 기획자입니다. 당신이 활용할 수 있는 자원은 다음과 같습니다: 
+    if (!ai) {
+        return '⚠️ API 키가 설정되지 않았습니다.\n\n관리자에게 문의하거나, 환경 변수에 VITE_GEMINI_API_KEY를 설정해주세요.';
+    }
+
+    const systemPrompt = `당신은 대한민국 강원도 홍천군의 체험학습 전문 기획자입니다. 당신이 활용할 수 있는 자원은 다음과 같습니다:
 1. '홍홍이' 커피 로스팅 및 드립백 만들기
 2. 금 캐기 체험
 3. 한옥 스테이 (전통/다문화 교육 연계)
