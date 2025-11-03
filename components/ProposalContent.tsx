@@ -50,8 +50,8 @@ const ProposalContent: React.FC = () => {
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                     <TractorIcon className="text-green-600 mb-2 h-8 w-8" />
-                    <h4 className="font-bold text-lg">로컬체험 프로그램</h4>
-                    <p className="text-sm text-gray-600">생산자 만나기, 농업기술센터 견학, 1~6차 산업 간접 체험하기를 통한 지역 농업의 이해.</p>
+                    <h4 className="font-bold text-lg">홍천 농업 체험 프로그램</h4>
+                    <p className="text-sm text-gray-600">농업기술센터 견학, 복숭아잼·대추젤리·사과주스 만들기, 오미자 가공공장 견학 및 수제청·젤리 시식, 스마트 농장 딸기 따기 체험.</p>
                 </div>
             </div>
 
@@ -197,7 +197,7 @@ const ProposalContent: React.FC = () => {
             
             <div className="mt-10 text-center bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">귀교의 다음 체험학습을 가장 의미 있는 시간으로 만들어 드리겠습니다.<br />자세한 내용은 현장에서 문의해 주세요.</h3>
-                <a href="https://www.notion.so/2a022558a74f8067b7f4fafc67535396?pvs=106" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                <a href="https://aquatic-treatment-669.notion.site/2a022558a74f8067b7f4fafc67535396?pvs=105" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">
                     지금 바로 신청하기
                 </a>
             </div>
